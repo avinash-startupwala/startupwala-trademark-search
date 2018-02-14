@@ -11,7 +11,7 @@ echo "Hello World";
     $db_password = 'irdi@123';
      $db_name = 'startup_wala';
 
-        return mysqli_connect('startupwala.cqyhn6lgmvjy.ap-south-1.rds.amazonaws.com', $db_user_name, $db_password, $db_name);
+        return mysqli_connect('www.startupwala.in', $db_user_name, $db_password, $db_name);
     }
 
        $var =  connection_db();
