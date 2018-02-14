@@ -18,7 +18,7 @@ echo "Hello World";
 
 echo $var;
 
- function get_array_from_query($query, $var)
+ function get_array_from_query($query, $conn)
     {
         $output = [];
         $result = $conn->query($query);
