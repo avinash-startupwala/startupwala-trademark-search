@@ -7,7 +7,7 @@ echo "Hello World";
 
  function connection_db()
     {
-   $db_user_name = 'startupwala_user';
+   $db_user_name = 'startupwala';
     $db_password = '1234';
      $db_name = 'startup_wala';
 
