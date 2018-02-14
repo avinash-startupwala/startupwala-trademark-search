@@ -18,5 +18,20 @@ echo "Hello World";
 
 echo $var;
 
+ function get_array_from_query($query, $var)
+    {
+        $output = [];
+        $result = $conn->query($query);
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                array_push($output, $row);
+            }
+        } else {
+            $output = NULL;
+        }
+        return $output;
+    }
+$vv = get_array_from_query('select tm_application_no from tm_data limit 5',$var);
 
+print_r($vv);
 ?>
