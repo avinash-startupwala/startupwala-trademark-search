@@ -8,7 +8,7 @@ echo "Hello World";
  function connection_db()
     {
    $db_user_name = 'root';
-    $db_password = 'irdi@123';
+    $db_password = '1234';
      $db_name = 'startup_wala';
 
         return mysqli_connect('www.startupwala.in', $db_user_name, $db_password, $db_name);
