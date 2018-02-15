@@ -14,7 +14,7 @@ require_once("heroku_postgres_database.php");
   what_next varchar(15) NULL,
   aws_identifier varchar(50) NULL
 )";
-        $data = $herokupostgrsdatabse->query($query);
+        $data = $herokupostgrsdatabse->query('DROP TABLE trademark_search_reports');
 
 
 
