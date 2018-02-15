@@ -7,7 +7,7 @@ require_once("heroku_postgres_database.php");
  $query = "CREATE TABLE trademark_search_reports (
   report_id              SERIAL PRIMARY KEY,
   brand_name           VARCHAR(120) NOT NULL,
-  trademark_class  integer(3) NULL,
+  trademark_class  INT(3) NULL,
   trade_description varchar(200) NULL,
   search_report VARCHAR(30) NULL,
   meaning_of_report VARCHAR(150) NULL,
